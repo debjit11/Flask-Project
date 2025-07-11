@@ -31,5 +31,7 @@ def login():
 def logout():
       session.pop("user",None)  
       flash("Logged out","info")
-      return redirect(url_for("auth.login"))  
+      return redirect(url_for("auth.login"))
+  
+  
     
